@@ -62,7 +62,7 @@ p {
 .top-nav {
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 2%;
     font-size: 14px;
@@ -91,7 +91,7 @@ p {
 }
 
 .about-page {
-    margin: 0 16rem;
+    margin: 0 auto;
     padding: 20px;
     line-height: 1.4;
     border-bottom: 1px dashed black;
@@ -124,11 +124,11 @@ button {
 }
 
 .img-container {
-    margin: 50px;
+    margin: 5em;
 }
 
 .img-container img {
-    margin: 5px auto;
+    margin: 0 auto;
     width: 80%;
 }
 
@@ -228,8 +228,10 @@ button {
 }
 
 footer {
-    width: 100%;
+    width: 80%;
     background: black;
+    display: flex;
+    justify-content: center;
 }
 
 footer nav {
