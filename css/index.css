@@ -3,48 +3,41 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -66,9 +59,77 @@ p {
     line-height: 1.4;
 }
 
+.top-nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 2%;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-img {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    line-height: 1.4;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.about-page {
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.4;
+    border-bottom: 1px dashed black;
+}
+
+.section3 {
+    margin: 0 16rem;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 1px dashed black;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+}
+
+.img-container {
+    margin: 5em;
+}
+
+.img-container img {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .top-content {
@@ -82,12 +143,13 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding: 1em;
 }
 
 .middle-content h2 {
@@ -104,12 +166,51 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box:nth-of-type(1) {
+    background: teal;
+}
+
+.box:nth-of-type(2) {
+    background: gold;
+}
+
+.box:nth-of-type(3) {
+    background: cadetblue;
+}
+
+.box:nth-of-type(4) {
+    background: coral;
+}
+
+.box:nth-of-type(5) {
+    background: crimson;
+}
+
+.box:nth-of-type(6) {
+    background: forestgreen;
+}
+
+.box:nth-of-type(7) {
+    background: darkorchid;
+}
+
+.box:nth-of-type(8) {
+    background: hotpink;
+}
+
+.box:nth-of-type(9) {
+    background: indigo;
+}
+
+.box:nth-of-type(10) {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -127,8 +228,10 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 80%;
     background: black;
+    display: flex;
+    justify-content: center;
 }
 
 footer nav {
